@@ -32,7 +32,7 @@ const css = document.querySelector("h3");
 const color1 = document.querySelector(".color1");
 const color2 = document.querySelector(".color2");
 const body = document.getElementById("gradient");
-const buttton = document.getElementById("random");
+const randomButton = document.getElementById("random");
 
 setGradient = () => {
 	body.style.background = `linear-gradient(to right, ${color1.value}, ${color2.value})`;
@@ -52,4 +52,4 @@ generateColors = () => {
 setGradient();
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
-random.addEventListener("click", generateColors);
+randomButton.addEventListener("click", generateColors);
